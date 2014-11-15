@@ -42,6 +42,7 @@ public class CircleView extends View {
     {
         circlePaint.setStyle(Paint.Style.FILL);
         circlePaint.setColor(Color.BLACK);
+        circlePaint.setAntiAlias(true);
     }
 
     @Override
