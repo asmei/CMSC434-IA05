@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg">
+
+    <PreferenceCategory android:title="General Settings">
+            <ListPreference
+                android:key="timezone"
+                android:title="Timezone"
+                android:summary="Choose your preferred timezone"
+                android:entries="@array/timezones_list"
+                android:entryValues="@array/timezones_list"
+                android:defaultValue="America/New_York"
+                android:layout="@layout/pref_layout"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Display Screen">
+        <ListPreference
+            android:key="timeconvention"
+            android:title="Time Convention"
+            android:summary="How do you want the time to be displayed?"
+            android:entries="@array/time_convention_entries"
+            android:entryValues="@array/time_convention_values"
+            android:defaultValue="12"
+            android:layout="@layout/pref_layout"/>
+        <CheckBoxPreference
+            android:key="showsecs"
+            android:title="Display seconds (hh:mm:ss)"
+            android:summary="Format time display to show seconds"
+            android:defaultValue="false"
+            android:layout="@layout/pref_layout"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

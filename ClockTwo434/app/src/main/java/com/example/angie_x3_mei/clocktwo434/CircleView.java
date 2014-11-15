@@ -14,8 +14,7 @@ public class CircleView extends View {
 
     private Paint circlePaint = new Paint();
 
-    TimeZone t = TimeZone.getTimeZone("EST");
-    Calendar c = Calendar.getInstance(t);
+    Calendar c = Calendar.getInstance();
    int seconds = c.get(Calendar.SECOND);
     int hour = c.get(Calendar.HOUR);
     int minutes = c.get(Calendar.MINUTE);

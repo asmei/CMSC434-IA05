@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/topmost"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="274dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="@string/time_now"
+            android:id="@+id/timeNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/amorpm"
+            android:text="AM or PM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="50sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/topmost"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/timezone"
+            android:text="@string/time_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/dateToday"
+            android:text="@string/date_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="50sp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
