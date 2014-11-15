@@ -6,7 +6,7 @@ Instructions:
 Download the Zip File.
 Open Android Studio.
 Import the project. 
-Run it.
+Run it. (Requires API 18)
 
 
 Clock One - This is a very basic clock in terms of design, however has a preferences that allows the user to customize various properties such as Timezone, Time Display format, and Time Convention. The settings are persistent.
