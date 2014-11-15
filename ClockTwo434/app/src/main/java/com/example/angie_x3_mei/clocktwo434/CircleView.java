@@ -16,7 +16,7 @@ public class CircleView extends View {
 
     TimeZone t = TimeZone.getTimeZone("EST");
     Calendar c = Calendar.getInstance(t);
-    int seconds = c.get(Calendar.SECOND);
+   int seconds = c.get(Calendar.SECOND);
     int hour = c.get(Calendar.HOUR);
     int minutes = c.get(Calendar.MINUTE);
 
@@ -58,8 +58,8 @@ public class CircleView extends View {
             minutes = 0;
             hour++;
         }
-        if (hour > 12){
-            hour = 1;
+        if (hour > 11){
+            hour = 0;
         }
 
         float smallR = getWidth()/2-50;
