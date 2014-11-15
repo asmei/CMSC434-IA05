@@ -6,10 +6,10 @@ Instructions:
 Download the Zip File.
 Open Android Studio.
 Import the project. 
-Run it. (Requires API 18)
+Run it. (Requires API 18, We prefer Nexus 4 as the device for best viewing experience )
 
 
-Clock One - This is a very basic clock in terms of design, however has a preferences that allows the user to customize various properties such as Timezone, Time Display format, and Time Convention. The settings are persistent.
+Clock One - This is a very basic clock in terms of design, however has a preferences that allows the user to customize various properties such as Timezone, Time Display format, and Time Convention. The settings are persistent. The settings can be accessed by clicking on the Menu, then the preference option. Revert back to the Clock either by clicking on the Menu, then clock or the back button.
 
 Clock Two - Custom View clock with twelve circles representing each hour. For the current hour, the circle is red while the previous hours are black and the future hours are gray. The hour circle's radius increases based on the second and the opacity of the circle gets darker as the minute approaches the next hour. 
 
